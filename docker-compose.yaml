@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+#      - PGDATA=/home/user/posgresql/data 
+      - POSTGRES_DB=postgres
+    networks:
+      - postgres_network
+    volumes:
+      - //C/Users//domccl/GitHub/docker_postgres/settings/:/home/user/settings/
+      - //C/Users//domccl/GitHub/Downloads/openBIS/:/home/user/data/
+    command: postgres
+
+networks:
+  postgres_network:
+    ipam:
+      config:
+        - subnet: 172.23.0.0/16
