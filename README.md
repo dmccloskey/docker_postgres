@@ -1,8 +1,11 @@
 # SBaaS_database
 postgresql database for SBaaS
 
-##Directories
-/dumps (ignored)
-/logs (ignored)
+## Directories
+/dumps
+
+/logs
+
 /scripts
+
 /settings
