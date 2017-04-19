@@ -12,7 +12,7 @@ services:
       - postgres_network
     volumes:
       - //C/Users//domccl/GitHub/docker_postgres/settings/:/home/user/settings/
-      - //C/Users//domccl/GitHub/Downloads/openBIS/:/home/user/data/
+#      - //C/Users//domccl/Downloads/openBIS/:/home/user/data/
     command: postgres
 
 networks:
